@@ -1,6 +1,6 @@
 # circuit-problems
 
-A set of 54 circuit-analysis problems (DC, AC, transients, resonance, power factor, three-phase, per-unit, op-amps) and the small solver I use to check them. Every stored answer is recomputed from the code, so a wrong number or a typo in a parameter shows up as a failure instead of sitting quietly in the file.
+A set of 54 circuit-analysis problems (DC, AC, transients, resonance, power factor, three-phase, per-unit, op-amps) and a small solver that checks them. Every stored answer is recomputed from the code, so a wrong number or a typo in a parameter shows up as a failure instead of sitting quietly in the file.
 
 It only uses the Python standard library. Python 3.9 or newer.
 
@@ -92,7 +92,7 @@ For each problem:
 
 Bad lines, unknown methods, bad parameters and singular circuits come out as a FAIL with a message, not a traceback.
 
-A caveat: this proves the stored answers can be reproduced from the code and that the file is well formed. It does not check that the statement text or the worked solution actually match the answer. When the set was written, the answers were also re-derived without `circuits.py` (relaxation on the resistor networks, numerical integration of the transients, frequency sweeps, plain phasor arithmetic). Those were throwaway scripts and aren't in the repo. Tolerances are 1%, which leaves room for rounding in someone's working but still separates the listed mistakes from a correct answer.
+A caveat: this proves the stored answers can be reproduced from the code and that the file is well formed. It does not check that the statement text or the worked solution actually match the answer. Tolerances are 1%, which leaves room for rounding in someone's working but still separates the listed mistakes from a correct answer.
 
 ## Topics
 
@@ -116,6 +116,4 @@ By difficulty: 10 at level 1, 32 at level 2, 12 at level 3.
 
 `test_verify.py` checks that the shipped file passes, that corrupting an answer or a parameter makes it fail, that each kind of schema error is caught without a traceback, and that the command-line options and exit codes behave.
 
-## Author
-
-Ali Doğaner. MIT licensed.
+MIT licensed, Ali Doğaner.
