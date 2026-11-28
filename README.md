@@ -1,6 +1,6 @@
 # circuit-problems
 
-A set of 54 circuit-analysis problems (DC, AC, transients, resonance, power factor, three-phase, per-unit, op-amps) and a small solver that checks them. Every stored answer is recomputed from the code, so a wrong number or a typo in a parameter shows up as a failure instead of sitting quietly in the file.
+A set of 54 circuit-analysis problems (DC, AC, transients, resonance, power factor, three-phase, per-unit, op-amps) and a small solver that checks them. Every stored answer is recomputed from the code, so a wrong number or a typo in a parameter shows up as a failure instead of staying in the file unnoticed.
 
 It only uses the Python standard library. Python 3.9 or newer.
 
